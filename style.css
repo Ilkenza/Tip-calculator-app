@@ -1,0 +1,94 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+main{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.c{max-width: 80rem;}
+.i{left: 1rem;bottom: 1rem;}
+
+.l{
+    color: hsl(186, 14%, 43%);
+}
+.in{
+    border: 2px solid hsl(189, 41%, 97%);
+    background-color: hsl(189, 41%, 97%);
+    padding: .5rem 1rem;
+    color: hsl(183, 100%, 15%);
+}
+
+.in::placeholder{color: hsl(186, 14%, 43%);}
+
+.in:focus{border:2px solid hsl(172, 67%, 45%);outline: none;}
+
+.g{
+    width: 30%;
+    color: hsl(189, 41%, 97%);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+.s{background-color: #00494d;border: 2px solid #00494d;}
+.g.n{background-color: #26c0ab;border:2px solid #26c0ab}
+.g:hover{
+    color: hsl(183, 100%, 15%);
+    border: 2px solid transparent;
+    background-color:  hsla(172, 67%, 45%, 0.5);
+    transition: all .2s ease-in-out;
+}
+.ing{
+    width: 30%;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    border: 2px solid hsl(189, 41%, 97%);
+    padding-right: 1.3rem !important;
+}
+.ing:focus{outline: none;border: 2px solid hsl(172, 67%, 45%);}
+
+.ing::placeholder{color: hsl(186, 14%, 43%);}
+
+.r{--bs-gutter-x:0;}
+
+.a{background-color: #00494d;}
+
+.p{color: hsl(185, 41%, 84%);}
+
+.pl{color: hsl(184, 14%, 56%);margin-bottom: 0;}
+
+.nu{color: hsl(172, 67%, 45%);font-size: 3rem;margin-bottom: 0;}
+
+.bt{
+    background-color: #26c0ab;
+    color: hsl(183, 100%, 15%);
+    padding: .5rem 0rem;
+    font-weight: bold;
+    border: 0;
+    transition: all .3s ease-in-out;
+}
+
+.bt:hover{background-color: #90dfd4;transition: all .2s ease-in-out;}
+
+.bt:active{background-color: #26c0ab80 !important;}
+
+.bt:disabled{background-color: #26c0abde;color: #00494d80;}
+
+.er1,.er2{display: none;}
+
+.attribution { 
+    font-size: 1.2rem; 
+    margin-top: 2rem;
+    text-align: center; 
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media all and (max-width:576px){
+    .nu{font-size: 2rem;}
+    .g,.ing{width: 45%;}
+}
+@media all and (max-width:400px){
+    .g{width: 48%;}
+}
